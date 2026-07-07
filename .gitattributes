@@ -61,10 +61,21 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-node_modules/** linguist-vendored
+
+# Ignore third-party libraries
 wwwroot/lib/** linguist-vendored
-dist/** linguist-generated=true
-build/** linguist-generated=true
+
+# Ignore generated/minified JS
+*.min.js linguist-generated=true
+
+# Ignore generated CSS
+*.min.css linguist-generated=true
+
+# Ignore build output
 bin/** linguist-generated=true
 obj/** linguist-generated=true
-*.min.js linguist-generated=true
+
+# Ignore node packages if ever added
+node_modules/** linguist-vendored
+dist/** linguist-generated=true
+build/** linguist-generated=true
