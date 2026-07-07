@@ -61,3 +61,10 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+node_modules/** linguist-vendored
+wwwroot/lib/** linguist-vendored
+dist/** linguist-generated=true
+build/** linguist-generated=true
+bin/** linguist-generated=true
+obj/** linguist-generated=true
+*.min.js linguist-generated=true
